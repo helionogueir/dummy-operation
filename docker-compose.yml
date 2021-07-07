@@ -1,0 +1,9 @@
+version: '3'
+services:
+  dummy-operation:
+    image: php:8
+    container_name: dummy-operation
+    working_dir: /root/workspace/app
+    volumes:
+      - ./src:/root/workspace/app
+    tty: true
